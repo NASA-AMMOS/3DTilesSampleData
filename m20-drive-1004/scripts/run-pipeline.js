@@ -18,7 +18,7 @@ const {
 const __filename = url.fileURLToPath( import.meta.url );
 const __dirname = path.dirname( __filename );
 
-const typeArg = `--type=${ type }`;
+const typeArg = type ? `--type=${ type }` : '';
 
 console.log( 'MOVING FILES' );
 execSync( `node ${ path.resolve( __dirname, './move-raw-files.js' ) }`, { stdio: 'inherit' } );
