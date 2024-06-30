@@ -16,6 +16,14 @@ All working directories are assumed to be sibling folders to "/scripts".
 - `raw` directory: Folder with merged raw files downloaded from the PDS archive. Immediate child folders are number Sol directories.
 - `objs` directory: Working folder for the scripts into which all working products are copied.
 
+### Downloading Data
+
+1. Navigate to the [PDS Imaging Archive Explorer](https://pds-imaging.jpl.nasa.gov/beta/archive-explorer?mission=mars_2020).
+2. Select the desired Sol directories to process from the `m2020_navcam_ops_mesh` bundle and download them using a `curl` or `wget` script.
+3. Do the same for the same directories in the `m2020_navcam_ops_calibrated` and `m2020_navcam_ops_calibrated` bundles.
+4. Move all downloaded directories into the `raw` directory.
+5. Run the scripts.
+
 ### Running
 
 Generating a set of tilesets from the original color products into the "../tiles" folder.
@@ -36,3 +44,4 @@ node ./scripts/run-pipeline.js --output=rough-textures --type=RUF --images-only
 - `type`: the type of image product to use for the tilesets surface color.
 - `images-only`: whether to extract the images from each tileset tile and remove all other tileset data.
 
+## Building Landform
