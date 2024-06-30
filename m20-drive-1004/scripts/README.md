@@ -45,3 +45,22 @@ node ./scripts/run-pipeline.js --output=rough-textures --type=RUF --images-only
 - `images-only`: whether to extract the images from each tileset tile and remove all other tileset data.
 
 ## Building Landform
+
+**Installation**
+- Pull the [NASA-AMMOS/Landform](https://github.com/NASA-AMMOS/Landform)
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+- Install VS 2019 redistributable from VS installer
+- Install VS 2013 redistributable from VS installer
+- Install [C# 4.8 "developer pack"](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
+- Open the Visual Studio Solution
+ 
+**Dependencies**
+- Open the package manager console from "Tools > Nuget Package Manager > Package Mangager Console"
+- Run "update-package -reinstall"
+- Possibly replace GDalConfiguration.cs file when asked (git reset and try without replacing if it doesn't work)
+- Respond "N" when asked to update LGPL license files
+
+**Build**
+- Run a debug and release build from the Visual Studio UI
+- “Landform/Landform/bin/Release/Landform.exe” is available for execution
+- Alias the executable to `Landform` or add the directory to the Windows path so it can be called directly
