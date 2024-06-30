@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "3d-tiles-renderer": "^0.3.35",
+    "glob": "^10.3.12",
+    "yargs": "^17.7.2"
+  }
+}
