@@ -48,7 +48,7 @@ node ./scripts/run-pipeline.js --output=rough-textures --type=RUF --images-only
 
 **Installation**
 - Pull the [NASA-AMMOS/Landform](https://github.com/NASA-AMMOS/Landform)
-- Install Visual Studio 2022
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 - Install VS 2019 redistributable from VS installer
 - Install VS 2013 redistributable from VS installer
 - Install [C# 4.8 "developer pack"](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
