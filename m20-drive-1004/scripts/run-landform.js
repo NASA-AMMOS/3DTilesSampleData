@@ -35,6 +35,7 @@ console.log( );
 execSync( cmd, {
     stdio: 'inherit',
     env: {
+        // run using custom commands to ensure tileset consistency between runs
         LANDFORM_MESH_DECIMATOR: 'EdgeCollapse',
         LANDFORM_SPLIT_BY_TEXTURE_PERCENT_TO_TEST: 0,
     }
