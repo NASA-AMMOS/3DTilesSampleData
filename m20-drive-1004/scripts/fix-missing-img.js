@@ -19,8 +19,8 @@ const {
 // find all files in the "objs" directory
 const objPath = path.resolve( __dirname, '../objs' );
 const files = fs.readdirSync( objPath );
-const objs = files.filter( n => /\.obj$/i.test( n ) );
-let imgs = files.filter( n => /\.img$/i.test( n ) );
+const objs = files.filter( n => /\.obj$/i.test( n ) ).sort();
+let imgs = files.filter( n => /\.img$/i.test( n ) ).sort();
 if ( type !== null ) {
 
     // remove any images that don't match the target type

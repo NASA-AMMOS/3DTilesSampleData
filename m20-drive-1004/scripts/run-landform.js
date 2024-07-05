@@ -23,9 +23,19 @@ const tilesPath = path.resolve( __dirname, `../${ output }` );
 const objs = fs
     .readdirSync( objPath )
     .filter( f => /\.obj$/.test( f ) )
-    .map( f => path.resolve( objPath, f ).replace( /\\/g, '/' ) );
-
-const cmd = `Landform process-tactical --inputpath ${ objs.join( ',' ) }/ --outputfolder ${ tilesPath } --mission M2020 --meshregex auto_obj`;
-
+    .map( f => path.resolve( objPath, f ).replace( /\\/g, '/' ) )
+    .sort();
 fs.mkdirSync( tilesPath, { recursive: true } );
-execSync( cmd, { stdio: 'inherit' } );
+
+
+const cmd = `Landform process-tactical --inputpath ${ objs.join( ',' ) } --outputfolder ${ tilesPath } --mission M2020 --meshregex auto_obj --randomseed 1`;
+
+console.log( cmd );
+console.log( );
+execSync( cmd, {
+    stdio: 'inherit',
+    env: {
+        LANDFORM_MESH_DECIMATOR: 'EdgeCollapse',
+        LANDFORM_SPLIT_BY_TEXTURE_PERCENT_TO_TEST: 0,
+    }
+} );
