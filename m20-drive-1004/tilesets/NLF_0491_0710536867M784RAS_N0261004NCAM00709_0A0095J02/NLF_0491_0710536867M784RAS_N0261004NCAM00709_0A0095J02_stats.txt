@@ -1,0 +1,19 @@
+level 0: 1 tiles, 0 leaves; branching factor 4; geometric error 0.027-0.027
+  1 bounds 4.175x4.915x1.383
+  1 images 512x502-512x502, 257.0k total pixels, 1 indices, 1 meshes 11.4k-11.4k verts, 15.8k-15.8k tris (15.8k total), mesh area 3.806-3.806m^2 (4 total); tri area 0.023-4861.179mm^2
+  texture utilization 0.416-0.416; texels/cm^2 2.807-2.807
+level 1: 4 tiles, 1 leaves; branching factor 4; geometric error 0.000-0.019
+  4 bounds 1.097x2.458x0.593-2.088x2.458x0.770
+  4 images 326x329-511x367, 638.6k total pixels, 4 indices, 4 meshes 5.1k-14.1k verts, 7.3k-24.3k tris (64.9k total), mesh area 0.062-2.386m^2 (4 total); tri area 0.001-3026.960mm^2
+  texture utilization 0.238-0.602; texels/cm^2 4.471-69.394
+level 2: 12 tiles, 12 leaves; geometric error 0.000-0.000
+  12 bounds 0.152x0.036x0.065-1.044x1.229x0.597
+  12 images 53x79-506x495, 1.5M total pixels, 12 indices, 12 meshes 305-23.0k verts, 313-41.4k tris (170.7k total), mesh area 0.001-0.963m^2 (4 total); tri area 0.001-1317.927mm^2
+  texture utilization 0.173-0.699; texels/cm^2 7.572-86.022
+13 leaves at level(s) 1-2; geometric error 0.000-0.000
+  13 bounds 0.152x0.036x0.065-2.050x1.714x0.730
+  13 images 53x79-506x495, 1.7M total pixels, 13 indices, 13 meshes 305-23.0k verts, 313-41.4k tris (178.0k total), mesh area 0.001-0.963m^2 (4 total); tri area 0.001-1317.927mm^2
+  texture utilization 0.173-0.699; texels/cm^2 7.572-86.022
+tile tree has 3 levels, 17 total tiles, 13 leaves
+17 meshes, 17 textures, 251.4k triangles, 2.4M texels
+texture utilization 0.173-0.699; texels/cm^2 2.807-86.022
