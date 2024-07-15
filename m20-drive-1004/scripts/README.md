@@ -4,7 +4,7 @@
 
 ### Versions
 
-- Landform @ [467265d83668e63c29e6683c385aac459a662a67](https://github.com/NASA-AMMOS/Landform/commit/467265d83668e63c29e6683c385aac459a662a67]
+- Landform @ [467265d83668e63c29e6683c385aac459a662a67](https://github.com/NASA-AMMOS/Landform/commit/467265d83668e63c29e6683c385aac459a662a67)
 - node @ v18.20.3
 - npm @ v10.7.0
 - gltf-transform @ v4.0.2
